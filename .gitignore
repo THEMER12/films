@@ -1,0 +1,7 @@
+# Docker
+.env
+node_modules/
+.next/
+__pycache__/
+*.db
+.pytest_cache/
