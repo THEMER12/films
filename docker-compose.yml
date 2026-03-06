@@ -1,0 +1,38 @@
+services:
+  db:
+    image: postgres:15-alpine
+    container_name: films_db
+    environment:
+      POSTGRES_USER: user_admin
+      POSTGRES_PASSWORD: password123
+      POSTGRES_DB: films_db
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+    ports:
+      - "5432:5432"
+
+  back:
+    build: ./back
+    container_name: films_back
+    volumes:
+      - ./back:/app
+    ports:
+      - "8000:8000"
+    environment:
+      DATABASE_URL: postgresql://user_admin:password123@db:5432/films_db
+    depends_on:
+      - db
+
+  front:
+    build: ./front
+    container_name: films_front
+    volumes:
+      - ./front:/app
+      - /app/node_modules
+    ports:
+      - "3000:3000"
+    depends_on:
+      - back
+
+volumes:
+  postgres_data:
