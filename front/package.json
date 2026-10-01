@@ -9,11 +9,6 @@
     "lint": "eslint"
   },
   "dependencies": {
-<<<<<<< HEAD
-    "next": "16.1.6",
-    "react": "19.2.3",
-    "react-dom": "19.2.3"
-=======
     "framer-motion": "^12.38.0",
     "lucide-react": "^0.546.0",
     "motion": "^12.23.24",
@@ -21,7 +16,6 @@
     "react": "19.2.3",
     "react-dom": "19.2.3",
     "tailwind-merge": "^2.5.2"
->>>>>>> 12ea9a5 (primera actualizacion del front)
   },
   "devDependencies": {
     "@tailwindcss/postcss": "^4",
@@ -30,11 +24,8 @@
     "@types/react-dom": "^19",
     "eslint": "^9",
     "eslint-config-next": "16.1.6",
-<<<<<<< HEAD
-=======
     "eslint-config-prettier": "^10.1.8",
     "prettier": "^3.8.1",
->>>>>>> 12ea9a5 (primera actualizacion del front)
     "tailwindcss": "^4",
     "typescript": "^5"
   }

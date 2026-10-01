@@ -95,4 +95,3 @@ export default function Home() {
     </div>
   );
 }
->>>>>>> 12ea9a5 (primera actualizacion del front)
